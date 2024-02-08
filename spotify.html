@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spotify clone created by kojisosuke</title>
+    <title>spotify clone created by VIkas Gulia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,8 +11,8 @@
         <ul>
             <li class="logosp"><img src="spotify.jpg" alt="spotify" width="40">Spotify
             </li>
-            <li type="none">home</li>
-            <li type="none">about</li>
+            <li type="none">Home</li>
+            <li type="none">About</li>
         </ul>
     </nav>
     <div class="container">
@@ -46,28 +46,13 @@
                 </div>
                 <div class="songItem">
                     <img src="" alt="6">
-                    <span class="songName">The Nights</span>
+                    <span class="songName">IN THE STARS</span>
                     <span class="songlistplay"><span class="timestamp">05:34 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img src="" alt="7">
-                    <span class="songName">Legends Never Die</span>
+                    <span class="songName">BHOLENATH 2</span>
                     <span class="songlistplay"><span class="timestamp">05:34 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img src="" alt="8">
-                    <span class="songName">Darkside</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img src="" alt="9">
-                    <span class="songName">Arcade</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img src="" alt="10">
-                    <span class="songName">Bholenath 2</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
             </div>
         </div>
@@ -75,11 +60,14 @@
     </div>
 
     <div class="bottom">
-        <input type="range" name="range" id="playbar" min="0" max="200" value="0">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
             <div class="icons">
-                <i class="fa-solid fa-backward-step" id="backward-step"></i>
-                <i class="fa-solid fa-circle-play" id="circle-play"></i>
-                <i class="fa-solid fa-forward-step" id="forward-step"></i>
+                <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+            </div>
+            <div class="songInfo">
+                <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">SEE YOU AGAIN</span>
             </div>
             </div>
             <script src="spotify.js"></script>

@@ -1,28 +1,36 @@
-.logosp{
-    color: wheat;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
     display: flex;
     align-items: center;
-    /* padding-right: 2px; */
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-body{
-    margin: 0;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    
 }
 nav ul li{
     padding: 0 12px;
 }
-li{
-    color: rgb(236, 226, 226);
-    align-items: center;
-    display: flex;
-    margin-right: 4%;
+.brand img{
+    width: 44px;
+    padding: 0 8px;
 }
-ul{
-    background-color: black;
+.logosp {
     display: flex;
-    padding-left: 0;
-    margin: 0;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
 .container{
     min-height: 72vh;
@@ -34,35 +42,18 @@ ul{
    width: 70%;
    border-radius: 12px;
    padding: 34px;
-   background-image: url('https://wallpaperaccess.com/full/2099444.png'); no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
+   background-image: url('https://th.bing.com/th/id/OIP.VFqpGAmcl_ypn2QF5l_oaAHaEK?rs=1&pid=ImgDetMain');
 }
 .bottom{
     position: sticky;
     bottom: 0;
     height: 130px;
-    background-color: rgb(215, 36, 36);
+    background-color: black;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-#playbar{
-        width: 80vw; 
-        cursor: pointer;
-    }
-#backward-step-solid{
-width: 20px;
-height: 20px;
-
-}
-#backward-step-solid{
-    width: 20px;
-    height: 20px;
+    flex-direction: column; 
 }
 .icons{
     margin-top: 14px; 
@@ -70,10 +61,14 @@ height: 20px;
 .icons i{
     cursor: pointer;
 }
-#backward-step,#forward-step,#circle-play{
-    font-size: 2em;
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
 }
-.bannersong{
+.songItemContainer{
+    margin-top: 74px;
+}
+.songItem{
     height: 50px;
     display: flex;
     background-color: white;
@@ -89,22 +84,23 @@ height: 20px;
     margin: 0 23px;
     border-radius: 34px;
 }
-
 .timestamp{
     margin: 0 23px;
 }
-
 .timestamp i{
     cursor: pointer;
 }
-
 .songInfo{
     position: absolute;
     left: 10vw;
     font-family: 'Varela Round', sans-serif;
 }
-
 .songInfo img{
     opacity: 0;
     transition: opacity 0.4s ease-in;
 }
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: rgb(202, 68, 68);
+    }
+  }
